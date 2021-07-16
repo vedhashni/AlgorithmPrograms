@@ -48,6 +48,14 @@ namespace AlgorithmProblems
                     bubble.printArray(sort);
                     break;
 
+                case 5:
+                    MergeSort mergeSort = new MergeSort();
+                    int[] arr1 = { 65, 32, 23, 89, 1, 2 };
+                    mergeSort.mergeSort(arr1);
+                    mergeSort.printArray(arr1);
+                    break;
+
+
 
                 default:
                     break;
