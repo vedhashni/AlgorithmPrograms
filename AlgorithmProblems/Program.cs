@@ -30,6 +30,14 @@ namespace AlgorithmProblems
                     BinarySearch.BinarySearching(words);
                     break;
 
+                case 3:
+                    
+                    InsertionSort obj = new InsertionSort();
+                    int[] arr = { 56, 32, 78, 2, 1, 5 };
+                    obj.sort(arr);
+                    obj.printArray(arr);
+                    break;
+
                 default:
                     break;
 
