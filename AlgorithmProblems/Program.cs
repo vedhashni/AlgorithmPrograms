@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace AlgorithmProblems
 {
@@ -20,6 +21,13 @@ namespace AlgorithmProblems
                     String str = Console.ReadLine();
                     int len = str.Length;
                     Permutation.permutation(str, 0, len - 1);
+                    break;
+
+                case 2:
+                    string filepath = File.ReadAllText(@"C:\Users\ven\source\repos\AlgorithmProblems\ListOfWordsFile.txt");
+                    List<string> words = new List<string>(filepath.Split(" "));
+                    words.Sort();
+                    BinarySearch.BinarySearching(words);
                     break;
 
                 default:
