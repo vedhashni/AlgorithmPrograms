@@ -15,7 +15,10 @@ namespace AlgorithmProblems
 
             int option = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("1.Permutation");
-            switch(option)
+            Console.WriteLine("2.BinarySearch");
+            Console.WriteLine("3.InsertionSort");
+            Console.WriteLine("4.BubbleSort");
+            switch (option)
             {
                 case 1:
                     String str = Console.ReadLine();
@@ -37,6 +40,14 @@ namespace AlgorithmProblems
                     obj.sort(arr);
                     obj.printArray(arr);
                     break;
+
+                case 4:
+                    BubbleSort bubble = new BubbleSort();
+                    int[] sort = { 34, 21, 78, 45, 3, 1 };
+                    bubble.BubbleSorting(sort);
+                    bubble.printArray(sort);
+                    break;
+
 
                 default:
                     break;
