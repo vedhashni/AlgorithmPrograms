@@ -59,6 +59,11 @@ namespace AlgorithmProblems
                     Anagram.FindingTheAnagram();
                     break;
 
+                case 7:
+                    PrimeRange prime = new PrimeRange();
+                    prime.FindPrime();
+                    break;
+
                 default:
                     break;
 
