@@ -55,7 +55,9 @@ namespace AlgorithmProblems
                     mergeSort.printArray(arr1);
                     break;
 
-
+                case 6:
+                    Anagram.FindingTheAnagram();
+                    break;
 
                 default:
                     break;
